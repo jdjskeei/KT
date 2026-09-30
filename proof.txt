@@ -1,0 +1,8 @@
+   17  find -type f -name '*.txt' | wc -l
+   19  grep -rl 'GOLD' ~/praktika/data | wc
+   24  awk '{s+=1} END{print s}' ~/praktika/nums.txt 
+   27  grep 'codeword=' ~/praktika/notes/.secret 
+   30  awk '$9==404 {count++} END {print count}' ~/praktika/logs/access.log 
+   32  awk '{print $1}' ~/praktika/logs/access.log | sort | uniq -c | sort -rn | head
+   36  chmod +x ~/praktika/report.sh 
+   38  history | grep -E 'grep|find|awk|sort|chmod' > ~/praktika/proof.txt
